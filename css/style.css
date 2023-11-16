@@ -73,10 +73,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: inherit;
+    max-height: 100vh;
 }
 
 h1 {
+    padding-top: 100px;
     font-size: 60px;
     line-height: 70px;
     font-weight: 700;
@@ -88,10 +89,9 @@ h1 {
     max-width: 720px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    text-align: center;
+    /* align-items: center; */
+    /* text-align: center; */
     margin: 150px auto;
-    margin-top: 150px;
     font-size: 36px;
     line-height: 50px;
     font-weight: 400;
@@ -108,5 +108,28 @@ span {
 .greeting {
     font-size: 56px;
     line-height: 70px;
-    color: rgb(61, 11, 11);
+    color: rgb(97, 7, 7);
+}
+
+@media (max-width: 650px) {
+    h1 {
+        padding-top: 50px;
+        font-size: 40px;
+        line-height: 56px;
+    }
+    .countdown {
+        font-size: 24px;
+        line-height: 36px;
+        margin: 50px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    span {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .greeting {
+        font-size: 38px;
+        line-height: 50px;
+    }
 }
